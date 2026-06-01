@@ -132,7 +132,7 @@ class _IntroScreenState extends State<IntroScreen>
           )!;
           final logoH = lerpDouble(
             nudgedLogoH,
-            availH * 0.40,
+            availH * 0.35,
             _layoutAnim.value,
           )!;
           final featH = availH - logoH;
@@ -307,7 +307,7 @@ class _IntroScreenState extends State<IntroScreen>
             opacity: _optionAnim.value.clamp(0.0, 1.0),
             child: _buildRedeemRow(),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 24),
           Opacity(
             opacity: (_optionAnim.value * 0.5).clamp(0.0, 1.0),
             child: const Padding(
